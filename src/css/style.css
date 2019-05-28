@@ -25,14 +25,14 @@ img {
 }
 
 .button {
-  padding: 19px 30px 17px 30px;
+  padding: 17px 30px 17px 29px;
   border-radius: 10px;
   background-color: #ffd200;
   border: none;
 }
 
 .navbar {
-  padding: 8px 0;
+  padding: 4px 0;
 }
 
 .navbar-block {
@@ -72,6 +72,7 @@ img {
   margin-left: 30px;
   font-weight: 700;
   font-size: 13px;
+  margin-top: -2px;
 }
 
 .navbar__phone {
@@ -80,7 +81,8 @@ img {
   font-size: 20px;
   font-weight: 700;
   text-decoration: none;
-  margin-top: 10px;
+  margin-top: 6px;
+  letter-spacing: 0.4px;
 }
 
 @media (max-width: 768px) {
