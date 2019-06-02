@@ -1,3 +1,5 @@
+*
+  box-sizing: border-box
 body 
   font-family: 'Museo Sans Light', sans-serif
   font-weight: 300
@@ -20,3 +22,25 @@ img
   border-radius: 10px
   background-color: $main-color
   border: none
+  &:hover
+    background-color: lighten($main-color, 10%) 
+
+.section 
+  padding: 90px 0
+  &-title 
+    font-size: 24px
+    font-family: 'Museo Sans Bold'
+    line-height: 35px
+  &-subtitle
+    font-size: 16px
+    font-weight: 400
+    display: block
+.input
+  border: 1px solid $border-input
+  padding: 20px 26px
+  font-size: 15px
+  border-radius: 10px
+  outline: none
+  &:focus
+    border: 1px solid orange
+    border-radius: 10px

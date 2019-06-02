@@ -1,0 +1,100 @@
+.offer
+  background: url('../img/offer/offer-img.png') no-repeat
+  background-position: center right
+  position: relative
+  background-size: 50%
+  &:before
+    width: 50%
+    height: 100%
+    position: absolute
+    background-color: #fff
+    top: 0
+    left: 0
+  &-block 
+    width: 50%
+    position: relative
+    padding-right: 90px
+  &__title 
+    line-height: 35px
+    margin-bottom: 18px
+    margin-top: -15px
+  &__subtitle
+    max-width: 60%
+    margin-bottom: 33px
+  &__input 
+    margin-bottom: 30px
+    width: 240px
+    height: 65px
+    line-height: 1.2
+    &:first-child
+      margin-right: 10px
+  &__button
+    width: 100%
+    height: 70px
+    +bold
+    margin-bottom: 26px
+  &-footer
+    font-size: 15px
+    line-height: 24px;
+    display: flex
+    justify-content: space-between
+    margin-left: auto
+    margin-right: auto
+    &__text
+      letter-spacing: 0.2
+      width: 50%
+      &-call
+      width: 50%
+      letter-spacing: 0.2
+    &__tell
+      margin-top: 0
+      margin-left: -8px
+      +bold
+     
+@media (max-width: 1200px)
+  .offer
+    &__input
+      width: 100%
+      margin-bottom: 10px
+@media (max-width: 768px) 
+  .offer
+    background: none
+    &-block
+      width: 100%
+      padding-right: 0
+    &-footer
+      &__tell
+        margin-left: 5px
+@media (max-width: 567px)
+  .offer
+    &__title
+      font-size: 18px
+      line-height: 22px
+      letter-spacing: 0
+      width: 270px
+    &__subtitle 
+      font-size: 14px
+      width: 250px
+      max-width: 250px
+      margin-bottom: 26px
+    &__button
+      font-size: 13px
+      line-height: 16px
+      padding: 14px 62px 14px 64px
+      margin-bottom: 20px
+    &-footer
+      display: block
+      font-style: 15px
+      line-height: 24px
+      margin-left: 5px
+      &__text
+        display: block
+        width: 100%
+        margin-bottom: 10px
+        &-call
+          display: block
+      &__tell
+        display: block
+        margin-left: 1px
+   
+   
