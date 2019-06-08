@@ -17,6 +17,7 @@
       line-height: 55px
       margin-bottom: 38px
       +bold
+      text-align: left
     &__subtitle
       display: inline-block
       font-size: 20px
@@ -64,9 +65,9 @@
       &-text 
         padding-right: 10px
         &__title
-          text-align: center
+          text-align: left
         &__subtitle
-          text-align: center
+          text-align: left
           display: block
       &-image
         margin-left: auto
@@ -106,19 +107,26 @@
           margin-bottom: 22px
       &-text
         margin-left: 5px
+        min-width: 280px
+        padding: 0
         &__title
           font-size: 22px
           line-height: 30px
           letter-spacing: 0.4px
-          width: 280px
           min-width: 280px
+          max-width: 280px
           margin-top: 4px
           margin-bottom: -0.1px
+          padding: 0
+        
         &__subtitle
           line-height: 1.2
           padding-top: 5px
+          padding-right: 5px
+          max-width: 250px
           letter-spacing: 0.2px
           font-size: 16px
+          padding: 0
           +bold
 
           
