@@ -1,0 +1,53 @@
+.advantages
+  margin-top: -90px
+  &__block
+    min-height: 280px
+    background-color: $main-color
+    display: flex
+  &__title
+    +reg
+    max-width: 900px
+    margin: auto
+    line-height: 50px
+    font-size: 32px
+    justify-content: center
+    align-items: center 
+  &-features
+    display: flex
+    justify-content: space-around
+    flex-wrap: wrap
+    margin-top: 100px
+.features
+  &__image
+
+@media (max-width: 1200px)
+    .advantages
+      &__title
+    
+    .features
+      &__image
+        margin-bottom: 30px
+
+@media (max-width: 768px)
+  .advantages
+    &__title
+      font-size: 24px
+@media (max-width: 576px)
+  .advantages
+    &__title
+      font-size: 18px
+      line-height: 28px
+      max-width: 280px
+      +bold
+    &__block
+      margin-bottom: 60px
+  .features
+    margin-top: 0
+    &__image
+     flex-direction: column
+     height: 85%
+     width: 85%
+
+
+      
+     
