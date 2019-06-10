@@ -12,6 +12,8 @@
     display: flex
     flex-direction: column
     font-size: 13px
+    margin-top: -3px
+    letter-spacing: 0.2px
   &__button 
     margin-left: 30px
     font-weight: 700
@@ -19,13 +21,14 @@
     margin-top: -2px
     
   &__phone
+    +bold
     display: inline-block
     color: $text-color
     font-size: 20px
     font-weight: 700
     text-decoration: none
     margin-top: 6px
-    letter-spacing: 0.4px
+    letter-spacing: 0.2px
 @media (max-width: 768px)
   .container
     width: 580px

@@ -71,7 +71,7 @@
           </div>
           <!-- /.hero-text -->
           <div class="hero-image wow bounceInDown" data-wow-delay="1s">
-            <img src="img/hero/hero_image.png" alt="План квартиры">
+            <img class="hero-image__item" src="img/hero/hero_image.png" alt="План квартиры">
           </div>
           <!-- /.hero-image -->
         </div>
@@ -80,7 +80,7 @@
       <!-- /.container -->
     </section>
     <!-- /.hero -->
-    <section class="offer section">
+    <section class="offer section offer-section">
       <div class="container">
         <div class="offer-block wow bounceInRight">
           <h2 class="section-title offer__title">Мы бесплатно разработаем
@@ -110,10 +110,10 @@
       <!-- /.container -->
     </section>
     <!-- /.offer -->
-    <section class="section portfolio">
+    <section class="section section-portfolio portfolio">
       <div class="container">
         <h2 class="section-title portfolio__title">
-          Работая с 2007 года, мы сделали более 500 ремонтов в квартирах и домах
+          <span class="portfolio__title-section">Работая с 2007 года,</span> мы сделали более 500 ремонтов в квартирах и домах
         </h2>
         <div class="slider">
           <div class="slider__item"><img class="slider__image" src="img/portfolio/slider-1.jpg" alt=""></div>
@@ -228,7 +228,7 @@
       <!-- /.container -->
     </div>
     <!-- /.section section-price -->
-    <section class="section steps">
+    <section class="section section-steps steps">
       <div class="container">
         <h2 class="section-title steps__title">Наши специалисты готовы выехать на замер в любое удобное для Вас время</h2>
         <!-- /.section-title steps__title -->
@@ -289,44 +289,50 @@
    <section class="section advantages">
        <div class="section-block advantages__block">
          <h3 class="section-title advantages__title">
-          Ремонт обойдется Вам дешевле, так как мы используем качественные материалы по оптовым ценам
+          <span class="advantages__title-item">Ремонт обойдется Вам дешевле, так как</span> мы используем качественные материалы по оптовым ценам
          </h3>
        </div>
        <div class="container">
         <div class="advantages-features">
-          <img class="features__image" src="img/advantages/adv-1.png" alt="">
-          <img class="features__image" src="img/advantages/adv-2.png" alt="">
-          <img class="features__image" src="img/advantages/adv-3.png" alt="">
+         <div class="advantages-features__img">
+            <img class="features__image" src="img/advantages/adv-1.png" alt="">
+         </div>
+          <div class="advantages-features__img">
+            <img class="features__image" src="img/advantages/adv-2.png" alt="">
+          </div>
+          <div class="advantages-features__img">
+            <img class="features__image" src="img/advantages/adv-3.png" alt="">
+          </div>
         </div>
        </div>
    </section>
 
-   <section class="section guaranty">
+   <section class="section guaranty section-guaranty">
      <div class="container">
        <h3 class="section-title guaranty__title">Все наши гарантийные обязательства подробно и прозрачно описаны в договоре</h3>
        <!-- /.section-title guaranty__title -->
        <div class="guaranty-main">
-         <div class="guaranty__block">
-         <div class="guaranty__block-img">
+         <div class="guaranty-main__block">
+         <div class="main__block-img">
            <img src="img/guaranty/doc-1.png" alt="" class="guaranty__image"></div>
          <!-- /.guaranty__text -->
-        <div class="block-text">
+        <div class="main__block-text">
           <p class="guaranty__text">Гарантия на качество выполняемых работ</p>
         </div>
        </div>
-         <div class="guaranty__block">
-         <div class="guaranty__block-img">
+         <div class="guaranty-main__block">
+         <div class="main__block-img">
            <img src="img/guaranty/doc-2.png" alt="" class="guaranty__image"></div>
          <!-- /.guaranty__text -->
-        <div class="block-text">
+        <div class="main__block-text">
           <p class="guaranty__text">Гарантия на фиксированные цены Виды работ и цены на них прописаны в договоре</p>
         </div>
        </div>
-      <div class="guaranty__block">
-        <div class="guaranty__block-img">
+      <div class="guaranty-main__block">
+        <div class="main__block-img">
           <img src="img/guaranty/doc-3.png" alt="" class="guaranty__image"></div>
         <!-- /.guaranty__text -->
-        <div class="block-text">
+        <div class="main__block-text">
           <p class="guaranty__text">Гарантия на точное соблюдение сроков и ответственность за их невыполнение</p>
         </div>
       </div>
@@ -336,7 +342,7 @@
      <!-- /.section-main guaranty__main -->
    </section>
 
-   <section class="section brif">
+   <section class="section brif brif-section">
      <div class="container">
        <div class="brif-block">
          <div class="interview brif__interview">
@@ -345,22 +351,22 @@
            <span class="interview__subtitle">Для этого нужно ответить на 4 вопроса:
            </span>
            <ul class="interview-list">
-             <li class="interview-list__item">
+             <li class="interview-list__item first">
                <span class="interview-list__counter">1</span> <!-- /.interview-list__counter -->
                <span class="interview-list__text">Какова площадь помещения?</span> <!-- /.interview-list__text -->
               </li>
              <!-- /.interview-list__item -->
-             <li class="interview-list__item">
+             <li class="interview-list__item second">
                <span class="interview-list__counter">2</span> <!-- /.interview-list__counter -->
                <span class="interview-list__text">У Вас новостройка или вторичное жилье?</span> <!-- /.interview-list__text -->
               </li>
              <!-- /.interview-list__item -->
-             <li class="interview-list__item">
+             <li class="interview-list__item third">
                <span class="interview-list__counter">3</span> <!-- /.interview-list__counter -->
-               <span class="interview-list__text">Где находится помещение, в котором будет производиться ремонт?</span> <!-- /.interview-list__text -->
+               <span class="interview-list__text third-text">Где находится помещение, в котором будет производиться ремонт?</span> <!-- /.interview-list__text -->
             </li>
              <!-- /.interview-list__item -->
-             <li class="interview-list__item">
+             <li class="interview-list__item fourth">
                <span class="interview-list__counter">4</span> <!-- /.interview-list__counter -->
                <span class="interview-list__text">Назначение помещения?</span> <!-- /.interview-list__text -->
               </li>
@@ -391,6 +397,41 @@
    <!-- /.section brif -->
   </main>
 
+  <footer class="footer">
+    <div class="map" id="map">
+    <script type="text/javascript" charset="utf-8" async
+      src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aaa0934e9e2011ab95cf9837388da90e284d214849905bebd65f66645581b4552&amp;width=100%25&amp;height=640&amp;lang=ru_RU&amp;scroll=false"></script>
+     </div> 
+      <div class="container footer-container">
+        <div class="contacts-block">
+          <div class="contacts">
+            <h3 class="contacts__title">Приезжайте к нам в гости! Проконсультируем Вас по всем вопросам ремонта</h3>
+            <ul class="contacts-list">
+              <li class="contacts-list__item">
+                <span class="contacts-list__icon">
+                  <img src="img/footer/map-placeholder.png" alt="">
+                </span>
+                <span class="contacts-list__text">г. Москва <br> <span class="text-bold">ул. Ленина, д. 10, корпус 2, оф. 308</span></span>
+              </li>
+              <li class="contacts-list__item">
+                <span class="contacts-list__icon">
+                  <img src="img/footer/clock.png" alt="">
+                </span>
+                <span class="contacts-list__text">Режим работы: <br> <span class="text-bold">с 9:00 до 18:00</span> </span>
+              </li>
+              <li class="contacts-list__item">
+                <span class="contacts-list__icon">
+                  <img src="img/footer/phone.png" alt="">
+                </span>
+                <span class="contacts-list__text">Телефон: <br> <a class="text-bold" href="tel:+ 7(495)42-251-31">+7 (495) 42-251-31</a></span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    
+  </footer>
+
   <div class="modal" id="modal">
     <div class="modal-dialog">
       <h4 class="modal-dialog__title">
@@ -418,17 +459,27 @@
     // Валидация формы
     $('#brif-form').validate({
       rules: {
-        username: "required",
+        username: {
+          required: true,
+          minlength: 2,
+          maxlength: 15
+        },
         phone: "required",
         email: {
           required: true,
-          email: true
+          email: true 
         }
       },
       messages: {
-        username: "Укажите имя",
-        email: "Введите Ваш email",
-        phone: "Введите Ваш номер телефона"
+        username: {
+          required: "Введено неправильное количество символов (минимум 2, максимум 15)",
+          minlength: jQuery.validator.format("Минимум {0} символа")
+        },
+        email: {
+          required: "Заполните поле",
+          email: "Введите корректный email"
+        },
+        phone: "Заполните поле"
       },
       errorClass: "invalid",
       errorElement: "div"
@@ -438,15 +489,20 @@
       rules: {
         username: {
           required: true,
-          minlength: 3
+          minlength: 2,
+          maxlength: 15
+          
         },
         phone: "required"
       },
       messages: {
-        username: "Укажите имя",
+        username: {
+          required: "Введено неправильное количество символов (минимум 2, максимум 15)",
+          minlength: jQuery.validator.format("Минимум {0} символа")
+        },
         phone: "Введите Ваш номер телефона",
       },
-      errorClass: "invalid",
+      errorClass: "invalid-2",
       errorElement: "div"
     });
     // Маска для телефона

@@ -6,41 +6,56 @@
     display: flex
   &__title
     +reg
-    max-width: 900px
     margin: auto
     line-height: 50px
     font-size: 32px
     justify-content: center
     align-items: center 
+    &-item
+      display: block
   &-features
     display: flex
-    justify-content: space-around
+    justify-content: space-between
+    align-items: center
     flex-wrap: wrap
     margin-top: 100px
 .features
   &__image
 
 @media (max-width: 1200px)
-    .advantages
-      &__title
+  .advantages
+    &__title
+    &-features
+      &__img
+        margin: 0 auto 30px auto
     
-    .features
-      &__image
-        margin-bottom: 30px
+  .features
+    &__image
+      margin: auto
 
 @media (max-width: 768px)
   .advantages
     &__title
-      font-size: 24px
+      font-size: 20px
 @media (max-width: 576px)
   .advantages
     &__title
       font-size: 18px
-      line-height: 28px
-      max-width: 280px
+      line-height: 22px
+      max-width: 290px
       +bold
+      padding: 0 15px 0 15px
+      text-align: center
+      &-item
+        display: inline
+    &-features
+      &__img
+        display: flex
+        justify-content: center
+        align-items: center
+       
     &__block
-      margin-bottom: 60px
+      margin-bottom: 0px
   .features
     margin-top: 0
     &__image

@@ -3,6 +3,7 @@
   background-position: left center, center right
   background-size: 50%, contain
   background-repeat: repeat-y, no-repeat
+  padding: 35px 0
   &-block
     display: flex
   &__interview
@@ -15,31 +16,35 @@
     width: 100%
     max-width: 370px
     margin-bottom: 15px
+    padding: 23px
   &__button
     height: 70px
     width: 100%
     max-width: 370px
     margin-top: 15px
-    margin-bottom: 30px
+    margin-bottom: 28px
   
 .interview
-  padding-right: 70px
   &__title
     font-size: 22px
     +bold
-    margin-bottom: 50px
+    margin-bottom: 45px
+    line-height: 33px
   &__subtitle
     font-size: 16px
     display: block
-    margin-bottom: 95px
+    margin-bottom: 85px
   &-list
     list-style: none
     padding: 0
+    font-size: 18px
+     
     &__item
       display: flex
       align-items: center
       +bold
-      margin-bottom: 25px
+      margin-bottom: 10px
+      padding: 8px 0
     &__counter
       display: inline-block
       line-height: 35px
@@ -52,15 +57,30 @@
       font-size: 14px
     &__text
       max-width: 400px
+.third
+  &-text
+    margin-top: 8px
+.fourth
+  margin-top: 20px
+
+
+.brif__form
+  padding-left: 220px
 .form
   &__title
     font-size: 22px
     +bold
-    margin-bottom: 50px
+    margin-bottom: 47px
+    line-height: 33px
   &__subtitle
     font-size: 16px
     display: block
     margin-bottom: 95px
+  &__description
+    font-size: 15px
+    line-height: 24px
+    letter-spacing: 0.1px
+  
 @media (max-width: 1200px)
   .brif
     &__form
@@ -96,4 +116,60 @@
       flex-direction: column
      
     &__form
+      padding-top: 90px
       margin-top: 60px
+@media (max-width: 576px)
+  .interview
+    &__title
+      font-size: 18px
+      line-height: 20px
+      max-width: 250px
+      margin-bottom: 20px
+    &__subtitle
+      font-size: 14px
+      max-width: 180px
+    &-list
+      &__item
+        line-height: 18px
+        font-size: 14px
+        max-width: 100%
+        letter-spacing: 0px
+      &__counter
+        min-width: 35px
+        min-height: 35px
+        margin-right: 12px
+  .brif
+    &__interview
+      padding: 0
+    &__form 
+      padding-left: 0px
+    &__button
+      font-size: 14px
+      line-height: 18px
+      margin-top: 0
+    &-section
+      padding-top: 28px
+      padding-bottom: px
+    &__input
+      margin-bottom: 8px
+
+  .form
+    &__title
+        font-size: 18px
+        line-height: 25px
+        min-width: 280px
+    &__subtitle
+      font-size: 14px
+      line-height: 26px
+    &__description
+      max-width: 150px
+      margin: auto
+  .first
+    margin-bottom: 13px
+  .second
+    margin-bottom: -10px
+    font-size: 15px
+  .third
+    margin-bottom: -15px
+
+    

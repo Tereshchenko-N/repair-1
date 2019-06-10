@@ -2,12 +2,14 @@
   background: $secondary url('../img/portfolio/portfolio-pattern.jpg') repeat-y center left
   background-size: 50% 
   &__title
-    max-width: 768px
     margin: auto
     margin-bottom: 100px
     +bold
     font-size: 30px
     line-height: 38px
+    &-section
+      display: block
+      margin-bottom: 5px
   &__arrows
     max-width: 120px
     margin: auto
@@ -15,10 +17,11 @@
     display: flex
     justify-content: space-between
 .slider
+  margin: 0 -15px 0 -15px
   &__image
     margin: auto
   &__item
-    margin: 0 15px 0 15px
+    padding: 0 15px 0 15px
     
 @media (max-width: 950px)
   .slider
@@ -28,8 +31,12 @@
     &__title
       font-size: 24px
       margin-bottom: 50px
+@media (max-width: 768px)
+  .portfolio
+    background: $secondary
 @media (max-width: 576px)
   .portfolio
+    background: $secondary
     &__title
       font-size: 18px
       margin-bottom: 50px
@@ -37,3 +44,7 @@
       line-height: 1.2
     &__arrows
       margin-top: 45px
+  .section
+    &-portfolio
+     padding-bottom: 55px
+     padding-top: 40px

@@ -1,0 +1,95 @@
+.footer
+  position: relative
+.map
+  position: absolute
+  left: 0
+  top: 0
+  width: 50%
+.contacts
+  flex-basis: 50%
+  &-list
+    &__text
+      line-height: 26px
+      max-width: 180px
+  &-block
+    display: flex
+    justify-content: flex-end
+    padding-top: 67px
+    padding-left: 430px
+   
+  &__title
+    +bold
+    font-size: 22px
+    margin-bottom: 90px
+    line-height: 33px
+    letter-spacing: -0.1px
+    max-width: 295px
+  &-list
+    padding: 0
+    list-style: none
+    &__icon
+      width: 20px
+      height: 20px
+      line-height: 20px
+      text-align: center
+      margin-right: 23px
+      margin-top: 5px
+    &__item
+      display: flex
+      align-items: flex-start
+      margin-bottom: 28px
+      letter-spacing: 0.3px
+.text-bold
+  +bold
+  text-decoration: none
+  color: #000
+
+@media (max-width: 1200px)
+  .contacts
+    &__title
+      font-size: 20px
+      line-height: 24px
+      min-width: 300px
+  .main
+    &__block
+      &-text
+        font-size: 18px
+  .guaranty
+    &__text
+      max-width: 250px
+      margin: auto
+@media (max-width: 768px)
+  .contacts
+    padding-left: 0
+    margin: auto
+    padding-top: 0px
+    &-block
+      padding-left: 0
+      position: inherit
+      width: 100%
+      order: -1
+  .footer
+    display: flex
+    flex-wrap: wrap
+    &-container
+      position: inherit
+  .map
+    position: inherit
+    order: 1
+    width: 100%
+@media (max-width: 576px)
+  .contacts
+    padding-left: 30px
+    &-block
+      padding-top: 47px
+    &__title
+      font-size: 18px
+      line-height: 20px
+      min-width: 270px
+      margin-bottom: 35px
+    &-list
+      &__icon
+        margin-right: 15px
+      
+
+

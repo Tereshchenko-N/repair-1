@@ -23,7 +23,8 @@
     text-align: left
   &__subtitle
     max-width: 60%
-    margin-bottom: 33px
+    margin-bottom: 31px
+    font-size: 16px
   &__input 
     margin-bottom: 30px
     width: 240px
@@ -44,22 +45,29 @@
     margin-left: auto
     margin-right: auto
     &__text
-      letter-spacing: 0.2
+      letter-spacing: 0.3
       width: 50%
-      max-width: 50%
+      max-width: 46%
+      font-size: 15px
+      line-height: 24px
       &-call
       width: 50%
-      letter-spacing: 0.2
+      letter-spacing: 0.1
+      font-size: 15px
+      line-height: 24px
     &__tell
       margin-top: 0
       margin-left: -3px
       +bold
+      font-size: 15px
      
 @media (max-width: 1200px)
   .offer
     background-size: cover
+    &-form
+      padding-left: 0
     &__input
-      width: 100%
+      min-width: 100%
       margin-bottom: 10px
     &__subtitle
       min-width: 85%
@@ -100,6 +108,8 @@
         margin-left: 5px
 @media (max-width: 567px)
   .offer
+    &-section
+      padding-bottom: 40px
     &__title
       font-size: 18px
       line-height: 22px
